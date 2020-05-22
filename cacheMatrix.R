@@ -25,11 +25,10 @@ makeCacheMatrix<- function(sp_mat = matrix()){
   list(set=set, get=get, setInverse=setInverse, getInverse=getInverse)
 }
 
-#compute special inverse 
+#The second function computes special inverse 
 
 cacheSolve<- function(x, ...){
-  
-  #return inverse of matrix x
+   #return inverse of matrix x
   sp_mat<- x$getInverse()
   
   #if inverse is already set return
